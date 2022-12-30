@@ -9,9 +9,11 @@ services:
     healthCheckPath: /
     envVars:
       - key: PORT
-        value: 5244
+        # value: 5244
+        sync: false
       - key: DB_TYPE
-        value: postgreSQL
+        # value: postgreSQL
+        sync: false
       - key: DB_HOST
         # value: db_host
         sync: false
